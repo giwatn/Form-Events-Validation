@@ -1,0 +1,179 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+body {
+    background-color: #181716;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    margin: 0 auto 0 auto;
+}
+
+
+/* Responsive page rules at bottom of style sheet */
+
+h1 {
+    background-image: url(../img/kinaglogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    text-indent: -1700%;
+    height: 75px;
+    line-height: 75px;
+    width: 117px;
+    margin: 0 auto 0 auto;
+    padding: 30px 10px 20px 10px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    margin: 10px 0 35px 0;
+}
+
+form {
+    background-color: #ac6013;
+    padding: 50px 60px 65px 60px;
+}
+
+label {
+    color: #fff;
+    display: inline;
+    font-size: 24px;
+}
+
+select,
+option {
+    font-size: 18px;
+    margin-left: 15px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+    zoom: 1;
+    -ms-transform: scale(2);
+    /* IE */
+    -moz-transform: scale(2);
+    /* FF */
+    -webkit-transform: scale(2);
+    /* Safari &  chrome */
+    -o-transform: scale(2);
+    /* Opera */
+    padding: 10px;
+}
+
+input[type="submit"] {
+    background-color: #e4404e;
+    color: #fff;
+    width: 25%;
+    padding: 12px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin-left: 270px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #fff;
+    color: #e4404e;
+    transition: ease-out 2s;
+}
+
+#packageHint {
+    zoom: 1.4;
+    color: #fff;
+    background-image: url(../img/hint.png);
+    background-repeat: no-repeat;
+    background-position: 0px -0.3px;
+    padding-left: 28px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#termsHint {
+    zoom: 1.4;
+    color: #fff;
+    background-image: url(../img/warning.png);
+    background-repeat: no-repeat;
+    background-position: 2px 35px;
+    padding: 35px 0 30px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkbox {
+    padding-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+#terms {
+    margin-top: 50px;
+}
+
+#packageHint,
+#termsHint {
+    color: #fff;
+    text-shadow: -1px 1px 2px #000;
+}
+
+
+/* Small screen - acts like the app would */
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #403c3b;
+    }
+    #page {
+        max-width: 480px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+
+/* Larger screens act like a demo for the app */
+
+@media only screen and (min-width: 960px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    h1 {
+        background-image: url(../img/2xkinglogo.png);
+        background-size: 72px 72px;
+    }
+}

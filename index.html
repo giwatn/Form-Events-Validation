@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/form-events.css">
+    <title>FORM EVENTS / HTML5 EVENTS(PAGE LEVEL LOAD EVENTS)</title>
+</head>
+
+<body>
+    <div id="page">
+        <!--LOGO HEAD-->
+        <h1>List King</h1>
+
+        <!--MEMBERSHIP FORM-->
+        <form action="#" method="post" id="formSignUp">
+            <h2>Membership</h2>
+
+            <!--Selection Package option-->
+            <label for="package" class="selectionBox">Select a package:</label>
+            <select id="package">
+                <option value="annual">1 year ($550)</option>
+                <option value="monthly">1 month ($55)</option>
+            </select>
+
+            <!--Hints for package-->
+            <div id="packageHint" class="tip"></div>
+
+            <!--Terms & Condition agreement-->
+            <input type="checkbox" id="terms">
+            <label for="terms" class="checkbox">Check agree to terms & conditions.</label>
+            <div id="termsHint" class="warning"></div>
+            <!--Submit button(NEXT)-->
+            <input type="submit" id="message" value="next">
+        </form>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/form-events.js"></script>
+    <script src="js/html5-events.js"></script>
+</body>
+
+</html>
